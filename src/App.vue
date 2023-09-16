@@ -17,11 +17,11 @@ export default {
 <style lang="scss">
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 
-.app {
-  height: 100%;
+#app {
   color: var(--textMainColor);
   background-color: var(--bgColor);
-  &__wrapper {
+
+  .app__wrapper {
     min-height: 100%;
     display: flex;
     flex-direction: column;
