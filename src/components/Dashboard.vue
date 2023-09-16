@@ -18,7 +18,7 @@
     <div class="dashboard__socmedia socmedia">
       <div class="socmedia__total socmedia-total">
         <div class="socmedia-total__cards">
-          <SocmediaTotalCard
+          <TotalCard
             v-for="(card, index) in cards"
             :key="index"
             :card="card"
@@ -29,7 +29,7 @@
       <div class="socmedia__today socmedia-today">
         <h2 class="socmedia-today__title">Overview - Today</h2>
         <div class="socmedia-today__cards">
-          <SocmediaTodayCard
+          <TodayCard
             v-for="(card, index) in todayCards"
             :key="index"
             :card="card"
@@ -46,7 +46,6 @@ import TotalCard from "./TotalCard.vue";
 import TodayCard from "./TodayCard.vue";
 import { onMounted, ref } from "vue";
 import data from "../data/data";
-
 
 function getTodayCards() {
   let ret = [];
@@ -66,7 +65,6 @@ function getTodayCards() {
   }
   return ret;
 }
-
 
 const cards = data;
 const todayCards = getTodayCards();
@@ -127,12 +125,6 @@ const changeTheme = (e) => {
     font-size: 16px;
     font-weight: 700;
     color: var(--textSecondaryColor);
-  }
-
-  &__theme-switcher {
-  }
-
-  &__socmedia {
   }
 }
 
@@ -196,9 +188,6 @@ const changeTheme = (e) => {
   &__total {
     margin-bottom: 50px;
   }
-
-  &__today {
-  }
 }
 
 .socmedia-total {
@@ -206,9 +195,6 @@ const changeTheme = (e) => {
     display: flex;
     flex-direction: column;
     gap: 22px;
-  }
-
-  &__card {
   }
 }
 
@@ -224,9 +210,6 @@ const changeTheme = (e) => {
     display: flex;
     flex-direction: column;
     gap: 14px;
-  }
-
-  &__card {
   }
 }
 
@@ -252,6 +235,7 @@ const changeTheme = (e) => {
     }
   }
 }
+
 @media (min-width: 1024px) {
   .dashboard {
     &__header {
