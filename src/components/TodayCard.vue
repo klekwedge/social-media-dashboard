@@ -4,8 +4,8 @@
       <div class="today-card__head">
         <p class="today-card__title">{{ card.title }}</p>
         <div class="today-card__icon">
+          <!-- :src="require(`../assets/images/${card.icon})`)" -->
           <img :alt="card.networkName" />
-          <!-- :src=`../assets/images/${card.icon}` -->
         </div>
       </div>
       <div class="today-card__body">
@@ -31,7 +31,7 @@
 </template>
 
 <script setup>
-import { defineProps } from "vue";
+import { computed, defineProps } from "vue";
 
 defineProps({
   card: Object,
@@ -89,7 +89,7 @@ defineProps({
         position: relative;
         color: var(--limeGreen);
         &::before {
-          content: url("@/assets/images/icon-up.svg");
+          content: url("../assets/images/icon-up.svg");
           position: absolute;
           top: -1px;
           left: -14px;
@@ -101,7 +101,7 @@ defineProps({
         position: relative;
         color: var(--brightRed);
         &::before {
-          content: url("@/assets/images/icon-down.svg");
+          content: url("../assets/images/icon-down.svg");
           position: absolute;
           top: -1px;
           left: -14px;
