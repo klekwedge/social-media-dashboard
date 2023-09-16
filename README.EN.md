@@ -10,7 +10,6 @@
   - [Links](#links)
 - [My process](#my-process)
   - [Built with](#built-with)
-  - [What I learned](#what-i-learned)
 - [Author](#author)
 
 ## Deployment instructions
@@ -37,10 +36,7 @@
 ### Built with
 
 - Vue
-- TypeScript
 - SCSS
-
-### What I learned
 
 ## Author
 
