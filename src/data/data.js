@@ -1,7 +1,7 @@
 export default [
     {
         networkName: "facebook",
-        icon: "icon-facebook.svg",
+        icon: "src/assets/images/icon-facebook.svg",
         nickname: "@nathanf",
         total: {
             count: 1987,
@@ -26,7 +26,7 @@ export default [
     },
     {
         networkName: "twitter",
-        icon: "icon-twitter.svg",
+        icon: "src/assets/images/icon-twitter.svg",
         nickname: "@nathanf",
         total: {
             count: 1044,
@@ -51,7 +51,7 @@ export default [
     },
     {
         networkName: "instagram",
-        icon: "icon-instagram.svg",
+        icon: "src/assets/images/icon-instagram.svg",
         nickname: "@realnathanf",
         total: {
             count: "11090",
@@ -76,7 +76,7 @@ export default [
     },
     {
         networkName: "youtube",
-        icon: "icon-youtube.svg",
+        icon: "src/assets/images/icon-youtube.svg",
         nickname: "Nathan F.",
         total: {
             count: "8239",

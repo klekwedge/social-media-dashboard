@@ -8,8 +8,11 @@
     ></div>
     <div class="total-card__content">
       <div class="total-card__address">
-        <!-- :src="require(`../assets/images/${card.icon}`)" -->
-        <span class="total-card__network"><img :alt="card.networkName" /></span>
+        <span class="total-card__network"
+          ><img
+            :alt="card.networkName"
+            :src="card.icon"
+        /></span>
         <span class="total-card__nickname">{{ card.nickname }}</span>
       </div>
       <div class="total-card__body">

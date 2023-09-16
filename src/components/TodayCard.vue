@@ -4,8 +4,8 @@
       <div class="today-card__head">
         <p class="today-card__title">{{ card.title }}</p>
         <div class="today-card__icon">
-          <!-- :src="require(`../assets/images/${card.icon})`)" -->
-          <img :alt="card.networkName" />
+          
+          <img :alt="card.networkName" :src="card.icon" />
         </div>
       </div>
       <div class="today-card__body">
