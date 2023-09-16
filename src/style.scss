@@ -1,48 +1,91 @@
 *,
 *::before,
 *::after {
-	padding: 0;
-	margin: 0;
-	border: 0;
-	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
   height: 100%;
 }
+
 body {
-	min-height: 100%;
-	font-family: "Inter", sans-serif;
-	font-size: 14px;
-	line-height: 1.2;
+  min-height: 100%;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+  line-height: 1.2;
 }
+
 a,
 a:visited {
-	text-decoration: none;
-	color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
+
 button:hover,
 a:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
+
 input,
 button,
 textarea {
-	font-family: "Inter", sans-serif;
+  font-family: "Inter", sans-serif;
 }
+
 ul,
 ol,
 li {
-	list-style: none;
+  list-style: none;
 }
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-	font-weight: inherit;
-	font-size: inherit;
+  font-weight: inherit;
+  font-size: inherit;
 }
+
 img {
-	vertical-align: top;
+  vertical-align: top;
+}
+
+:root {
+  --bgColor: hsl(0, 0%, 100%);
+  --bgDecorColor: hsl(0, 0%, 98%);
+  --bgHeaderColor: hsl(225, 100%, 98%);
+  --bgCardsColor: hsl(227, 47%, 96%);
+  --bgCardsColorHover: hsl(232, 33%, 91%);
+  --textMainColor: hsl(230, 17%, 14%);
+  --textSecondaryColor: hsl(228, 12%, 44%);
+  --switchThemeColor: hsl(230, 22%, 74%);
+
+  --limeGreen: hsl(163, 72%, 41%);
+  --brightRed: hsl(356, 69%, 56%);
+
+  --facebook: hsl(208, 92%, 53%);
+  --twitter: hsl(203, 89%, 53%);
+  --instagram: linear-gradient(to left, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  --youtube: hsl(348, 97%, 39%);
+}
+
+[dark] {
+  --bgColor: hsl(230, 17%, 14%);
+  --bgDecorColor: hsl(230, 17%, 16%);
+  --bgHeaderColor: hsl(232, 19%, 15%);
+  --bgCardsColor: hsl(228, 28%, 20%);
+  --bgCardsColorHover: hsl(228, 26%, 27%);
+  --textMainColor: hsl(0, 0%, 100%);
+  --textSecondaryColor: hsl(228, 34%, 66%);
+  --switchThemeColor: linear-gradient(
+    to left,
+    hsl(146, 68%, 55%),
+    hsl(210, 78%, 56%)
+  );
 }
